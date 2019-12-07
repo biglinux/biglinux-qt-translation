@@ -1,0 +1,7 @@
+3e256fc212b2ce70feae7ba9bbf65e15  DEBIAN/dpkg-divert
+94a7fea655f112496ec66a41bf56f067  DEBIAN/preinst
+0d44297915e63acc639eb51b6d4bc4b4  DEBIAN/postrm
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+f182635b48b38f7d856e206baefc0ca2  DEBIAN/control
+b25e7803a57702d58fe99f23e00bc572  usr/share/qt5/translations/qt_pt.qm/qt_pt.qm
+7cad5362b2f515e555cd41b61200883b  usr/share/qt5/translations/qt_pt.qm/qt_pt.ts

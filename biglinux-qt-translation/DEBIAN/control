@@ -1,0 +1,10 @@
+Package: biglinux-qt-translation
+Version: 1.0.0-1big1
+Depends: qttranslations5-l10n
+Architecture: all
+Maintainer: Elton Fabricio <https://github.com/eltonfabricio10>
+Section: admin
+Priority: optional
+Installed-Size:456
+Description: Improve translations of qt applications
+
