@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+package_name=biglinux-qt-translation
+case "$1" in
+  remove)
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/qt5/translations/qt_pt.qm"
+    ;;
+  purge)
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/qt5/translations/qt_pt.qm"
+;;
+esac
+exit 0

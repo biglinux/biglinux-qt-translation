@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=biglinux-qt-translation
+mkdir -p "/usr/share/dpkgdivert/biglinux-qt-translation"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-qt-translation/usrshareqt5translationsqt_pt.qm" --rename "/usr/share/qt5/translations/qt_pt.qm"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/share/qt5/translations/qt_pt.qm")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-qt-translation/usrshareqt5translationsqt_pt.qm" --rename "/usr/share/qt5/translations/qt_pt.qm"
+fi
+;;
+esac
+exit 0
