@@ -1,5 +1,5 @@
 Package: biglinux-qt-translation
-Version: 1.0.0-1big1
+Version: 1.0.1-1big1
 Depends: qttranslations5-l10n
 Architecture: all
 Maintainer: Elton Fabricio <https://github.com/eltonfabricio10>
